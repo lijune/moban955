@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Lavaggio Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.useso.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!---- start-smooth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <!---end-smooth-scrolling-->
+    <!--start-top-nav-script-->
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <!--End-top-nav-script-->
+</head>
+<body>
+
+<!--start-header-->
+<div class="header" id="home">
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <!--start-top-nav-->
+        <nav class="top-nav">
+            <ul class="top-nav">
+                <li><a href="index.html" class="active">首页</a></li>
+                &nbsp;/
+                <li><a href="#">公司简介</a></li>
+                <!--&nbsp;/-->
+                <!--<li><a href="about-us.html">企业构建</a></li>-->
+                &nbsp;/
+                <li><a href="#">公司服务</a></li>
+                <!--&nbsp;/-->
+                <!--<li><a href="clients.html">我们的客户</a></li>-->
+                &nbsp;/
+                <li><a href="#">联系我们</a></li>
+                &nbsp;/
+                <li><a href="#">24小时服务热线:<span style="color: red">13701584010</span></a></li>
+            </ul>
+            <a href="#" id="pull"><img src="images/menu-icon.png" title="menu"/></a>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<!--End-header-->
+
+<!--start-search-->
+<!--<div class="search">-->
+<!--<div class="container">-->
+<!--<div class="search-main">-->
+<!--<ul>-->
+<!--<li>-->
+<!--<div class="login">-->
+<!--<a href="login.html">Login</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="register.html">Register</a>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<div class="search-top">-->
+<!--<form>-->
+<!--<input type="text" value="" onfocus="this.value = '';"-->
+<!--onblur="if (this.value == '') {this.value = '';}">-->
+<!--<input type="submit" value="Search">-->
+<!--</form>-->
+<!--</div>-->
+<!--</li>-->
+<!--</ul>-->
+<!--<span></span>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--End-search-->
+
+<!--start-banner-->
+<div class="banner">
+    <div class="container">
+        <div class="banner-top">
+            <h2>-Welcome To-</h2>
+            <h1>中国中式餐饮工业化</h1>
+        </div>
+        <div class="banner-bottom">
+            <div id="top" class="callbacks_container">
+                <ul class="rslides" id="slider4">
+                    <li>
+                        <img src="images/banner-4.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img src="images/banner-2.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img src="images/banner-5.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img src="images/banner-6.jpg" alt=""/>
+                    </li>
+                    <li>
+                        <img src="images/banner-5.jpg" alt=""/>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--End-banner-->
+<!--Slider-Starts-Here-->
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+        // Slideshow 4
+        $("#slider4").responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: true,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+
+    });
+</script>
+<!--End-slider-script-->
+<!--start-lorem-->
+<div class="lorem">
+    <div class="container">
+        <div class="lorem-main">
+            <div class="lorem-left">
+                <img src="images/i.png" alt="">
+            </div>
+            <div class="lorem-right">
+                <h3>众联中央厨房研究院</h3>
+                <p>研究院以立足中国，放眼全球；做国际领先的中央厨房技术与规划系统解决方案的一流企业为愿景。
+                    在使命和愿景的驱动下，实现中国中式餐饮工业化——新理念中央厨房梦！</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="lorem-top">
+            <div class="col-md-4 lorem-top-one">
+                <div class="lorem-top-left">
+                    <h3>我们的简介</h3>
+                    <img src="images/abt.jpg" alt="">
+                    <h4>Union Center Kitchen,</h4>
+                    <p>众联中央厨房研究院是在中国烹饪协会餐饮产业化委员会的主导下，为了中国餐饮业中央厨房的建设与发展而即将成立的。
+                        总部位于中国南京，将陆续在北京、上海、广州、深圳、武汉、成都等地设立分支机构。
+                        研究院定位于中国中央厨房系统解决方案及产业发展研究第一品牌。</p>
+                    <div class="tool">
+                        <a class="tooltips" href="#">
+                            <span>阅读更多</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 lorem-top-one">
+                <div class="lorem-top-left">
+                    <h3>我们的业务</h3>
+                    <img src="images/svr.jpg" alt="">
+                    <h4>Union Center Kitchen,</h4>
+                    <p> ①中央厨房咨询,规划,设计,建设的交钥匙工程
+                        <br/>
+                        ②中央厨房培训
+                        <br/>
+                        ③中央厨房产品工业化生产工艺及技术研究
+                        <br/>
+                        ④中央厨房设备研发
+                        <br/>
+                        ⑤中央厨房的运营管理
+                        <br/>
+                        ⑥中央厨房的商业模式规划与设计
+                        <!--⑦中央厨房发展与创新论坛-->
+                    </p>
+                    <div class="tool">
+                        <a class="tooltips" href="#">
+                            <span>阅读更多</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 lorem-top-one">
+                <div class="lorem-top-left">
+                    <h3>我们的支持</h3>
+                    <img src="images/sup.jpg" alt="">
+                    <h4>Union Center Kitchen,</h4>
+                    <p>食品安全法第十一条规定的国家食品安全风险监测计划，由国务院卫生行政部门会同国务院质量监督、
+                        工商行政管理和国家食品药品监督管理以及国务院商务、
+                        工业和信息化等部门，根据食品安全风险评估、食品安全标准制定与修订、食品安全监督管理等工作的需要制定。</p>
+                    <div class="tool">
+                        <a class="tooltips" href="#">
+                            <span>阅读更多</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="lorem-middle">
+            <div class="lorem-middle-top">
+                <h3>研究院定位于中国中央厨房系统解决方案及产业发展研究第一品牌。</h3>
+                <p>众联中央厨房研究院是在中国烹饪协会餐饮产业化委员会的主导下，为了中国餐饮业中央厨房的建设与发展而即将成立的。
+                    总部位于中国南京，将陆续在北京、上海、广州、深圳、武汉、成都等地设立分支机构。</p>
+            </div>
+            <div class="lorem-middle-bottom">
+                <div class="col-md-6 lorem-middle-left">
+                    <h4>众联的理念</h4>
+                    <p>研究院秉承政治责任和社会责任，坚持抱团发展和天下餐饮是一家的理念，
+                        为企业搭建中央厨房研究平台、信息平台、供需平台、资源平台、产品研发平台和人脉平台。
+                        在行业协会交流互动中获得创新和创效！
+                    <p><a href="#">/ 更多信息 /</a></p>
+                    </p>
+                </div>
+
+                <div class="col-md-6 lorem-middle-left">
+                    <h4>众联的文化</h4>
+                    <p>研究院以献身中国餐饮中央厨房发展为事业，在中烹协支持下，引领行业发展方向，誓以产业报效祖国为民服务为使命。
+                        研究院研究从种子到筷子安心食品供应产业链。
+                        引入现代工业化的生产理念.....
+                    <p><a href="#">/ 更多信息 /</a></p>
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="lorem-bottom">
+            <div class="lorem-bottom-top">
+                <!--<h3>战略联盟合作企业.</h3>-->
+                <!--<p>Donec commodo mauris in nunc scelerisque non viverra nibh suscipit ivamus eget elit at mi euismod-->
+                <!--facilisis sed.</p>-->
+            </div>
+            <div class="lorem-bottom-btm">
+                <h4>战略联盟合作企业.</h4>
+                <p>南京乐鹰商用厨房设备有限公司 &nbsp; | &nbsp;
+                    台湾伟登工程有限公司 
+                    &nbsp; | &nbsp;台湾天烨食品机械集团 
+                    &nbsp; | &nbsp;蒸烩煮国际食品集团 
+                    &nbsp; | &nbsp;上海禾信汇诚厨房设备有限公司 
+                    &nbsp; | &nbsp;上海雅各来食品科技有限公司 
+                    &nbsp; | &nbsp;上海阳森精细化工有限公司 
+                    &nbsp; | &nbsp;上海浩盾通风设备有限公司 
+                    &nbsp; | &nbsp;上海冰迪冷气工程有限公司
+                    &nbsp; | &nbsp;日本三浦工业设备有限公司 
+                    &nbsp; | &nbsp;日本中央厨房株式会社 
+                    &nbsp; | &nbsp;北京众力精机科技有限公司 
+                    &nbsp; | &nbsp;北京中食净化科技股份有限公司 
+                    &nbsp; | &nbsp;成都索拉泰克精密机械有限公司
+                    &nbsp; | &nbsp;鸿海（苏州）食品科技股份有限公司
+                    &nbsp; | &nbsp;武汉世城集团 
+                    &nbsp; | &nbsp;深圳繁兴科技股份有限公司 
+                    &nbsp; | &nbsp;广州沃安实业有限公司 
+                    &nbsp; | &nbsp;常州恒瑞科技有限公司 
+                    &nbsp; | &nbsp;天津商软信息系统开发有限公司 </p>
+                <div class="tool btm-tool">
+                    <!--<a class="tooltips btm-tooltips" href="#">-->
+                        <!--<span>Read More</span></a>-->
+                    <h3>联系我们</h3>
+                    <p style="font-weight: bold;">
+                        陈经理&nbsp;&nbsp;手机号:13701584010
+                        &nbsp;电话: 025--52733586
+                        &nbsp;邮箱：307098601@qq.com
+                        &nbsp;地址：江苏省 南京市 将军南路641号</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End-lorem-->
+<!--start-footer-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="col-md-8 footer-left">
+                <!--<ul>-->
+                    <!--<li><a href="index.html" class="active">Home</a></li>-->
+                    <!--&nbsp;/-->
+                    <!--<li><a href="about-us.html">About Us</a></li>-->
+                    <!--&nbsp;/-->
+                    <!--<li><a href="about-us.html">Profile</a></li>-->
+                    <!--&nbsp;/-->
+                    <!--<li><a href="services.html">Services</a></li>-->
+                    <!--&nbsp;/-->
+                    <!--<li><a href="clients.html">Clients</a></li>-->
+                    <!--&nbsp;/-->
+                    <!--<li><a href="404.html">Careers</a></li>-->
+                    <!--&nbsp;/-->
+                    <!--<li><a href="contact.html">Contact</a></li>-->
+                <!--</ul>-->
+                <p>Copyright &copy; 2015.Company 南京众联中央厨房研究院 All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-2 footer-middle">
+                <!--<h3>联系我们</h3>-->
+                <!--<p style="color: white;">陈铃：13701584010-->
+                    <!--025&#45;&#45;52733586-->
+                    <!--E-mail：307098601@qq.com-->
+                    <!--地址：江苏省 南京市 将军南路641号</p>-->
+            </div>
+            <div class="col-md-2 footer-right">
+                <h3>关注我们</h3>
+                <ul>
+                    <!--<li><a href="#"><span class="twit"> </span></a></li>-->
+                    <!--<li><a href="#"><span class="fb"> </span></a></li>-->
+                    <!--<li><a href="#"><span class="in"> </span></a></li>-->
+                    <!--<li><a href="#"><span class="o"> </span></a></li>-->
+                    <!--<li><a href="#"><span class="v"> </span></a></li>-->
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+             var defaults = {
+             containerID: 'toTop', // fading element id
+             containerHoverID: 'toTopHover', // fading element hover id
+             scrollSpeed: 1200,
+             easingType: 'linear'
+             };
+             */
+
+            $().UItoTop({easingType: 'easeOutQuart'});
+
+        });
+    </script>
+    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover"
+                                                                             style="opacity: 1;"> </span></a>
+
+</div>
+<!--End-footer-->
+</body>
+</html>
